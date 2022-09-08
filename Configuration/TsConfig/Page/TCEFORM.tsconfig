@@ -6,6 +6,22 @@ TCEFORM {
 
     }
     tt_content {
-
+        colPos {
+        disabled = 1
+        }    
+        header_layout.altLabels {
+            0 = Default
+            1 = h1
+            2 = h2
+            3 = h3
+            4 = h4
+            5 = h5
+        }
+        layout.removeItems =  3,4,5
+        layout.altLabels {
+            0 = Default
+            1 = centered
+            2 = full width
+        }
     }
 }
