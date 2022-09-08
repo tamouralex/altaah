@@ -1,0 +1,26 @@
+
+##############
+#### PAGE ####
+##############
+page = PAGE
+page {
+
+    10 = FLUIDTEMPLATE
+    10 {
+        dataProcessing {
+            20 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+            20 {
+	         levels = 4
+	         titleField = nav_title // title 
+	         includeNotInMenu = 1
+	         as = mainnavigation	         
+	         dataProcessing.10 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+	         dataProcessing.10 {
+	                 table = tt_content
+                     pidInList.field = uid
+					 orderBy = sorting  
+                }
+            }
+       }
+    }  
+}

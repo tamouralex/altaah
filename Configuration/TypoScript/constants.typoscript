@@ -1,0 +1,88 @@
+@import 'EXT:fluid_styled_content/Configuration/TypoScript/constants.typoscript'
+@import 'EXT:backgroundimage4ce/Configuration/TypoScript/constants.typoscript'
+
+# customcategory=altaah=Altaah
+		
+#cat=altaah/a; type=options[TextHeader,LogoImage]; label= Logo or Text: Chose if you want to have logo or a text
+logoortext = TextHeader
+
+#cat=altaah/b; type=string; label= Logo: Path to your Logo
+logopath = typo3conf/ext/altaah1package/Resources/Public/Images/logo.png 
+		
+#cat=altaah/d; type=string; label= Header text: Text in your header 
+textheader = Text
+		
+#cat=altaah/k; type=string; label= Link: Header link 
+textlink = #		
+
+#cat=altaah/l; type=string; label= favicon: Path to your favicon
+faviconpath = typo3conf/ext/altaah1package/Resources/Public/Icons/favicon.ico 
+		
+#cat=altaah/m; type=string; label= apple-touch-icon: Path to your apple touch icon
+appletouchpath = typo3conf/ext/altaah1package/Resources/Public/Icons/apple-touch-icon.png	
+
+
+
+
+
+
+
+######################
+#### DEPENDENCIES ####
+######################
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:fluid_styled_content/Configuration/TypoScript/constants.typoscript">
+
+
+##############################
+#### FLUID STYLED CONTENT ####
+##############################
+styles {
+    templates {
+        layoutRootPath = EXT:altaah1package/Resources/Private/Layouts/ContentElements/
+        partialRootPath = EXT:altaah1package/Resources/Private/Partials/ContentElements/
+        templateRootPath = EXT:altaah1package/Resources/Private/Templates/ContentElements/
+    }
+}
+
+
+############
+### PAGE ###
+############
+page {
+     fluidtemplate {
+        layoutRootPath = EXT:altaah1package/Resources/Private/Layouts/Page/
+        partialRootPath = EXT:altaah1package/Resources/Private/Partials/Page/
+        templateRootPath = EXT:altaah1package/Resources/Private/Templates/Page/
+    }
+    meta {
+        description =
+        author =
+        keywords =
+        viewport = width=device-width, initial-scale=1
+        robots = index,follow
+        apple-mobile-web-app-capable = no
+        compatible = IE=edge
+    }
+    tracking {
+        google {
+            trackingID =
+            anonymizeIp = 1
+        }
+    }
+}
+
+
+##############
+### CONFIG ###
+##############
+config {
+    no_cache = 0
+    removeDefaultJS = 0
+    admPanel = 1
+    prefixLocalAnchors = all
+    headerComment = build by sitepackagebuilder.com
+    sendCacheHeaders = 1
+}
+
+
+

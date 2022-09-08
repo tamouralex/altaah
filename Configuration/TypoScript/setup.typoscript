@@ -1,0 +1,16 @@
+######################
+#### DEPENDENCIES ####
+######################
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:fluid_styled_content/Configuration/TypoScript/setup.typoscript">
+
+
+################
+#### HELPER ####
+################
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:altaah1package/Configuration/TypoScript/Helper/DynamicContent.typoscript">
+
+################
+#### LIB ####
+################
+@import 'EXT:altaah1package/Configuration/TypoScript/Lib/'
+
