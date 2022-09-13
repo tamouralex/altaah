@@ -45,3 +45,82 @@ $temporaryColumn = array(
         'tx_altaah1package_nav_title',
         'after:subheader'
 );
+
+
+
+
+
+
+\TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\B13\Container\Tca\Registry::class)->configureContainer(
+    (
+        new \B13\Container\Tca\ContainerConfiguration(
+            'b13-2cols5050-container', // CType
+            '50% 50%', // label
+            'bootstrap 50 50', // description
+            [
+                [
+                    ['name' => 'left side', 'colPos' => 201],
+                    ['name' => 'right side', 'colPos' => 202]
+                ]
+            ] // grid configuration
+        )
+    )
+    // set an optional icon configuration
+    ->setIcon('EXT:altaah1package/Resources/Public/Icons/Custom-Icon-Design-Mono-Business-2-Coffee.ico')
+);
+
+\TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\B13\Container\Tca\Registry::class)->configureContainer(
+        (
+            new \B13\Container\Tca\ContainerConfiguration(
+                'b13-2cols2575-container', // CType
+                '25% 75%', // label
+                'bootstrap 25 75', // description
+                [
+                    [
+                        ['name' => 'left side', 'colPos' => 201],
+                        ['name' => 'right side', 'colPos' => 202]
+                    ]
+                ] // grid configuration
+            )
+        )
+        // set an optional icon configuration
+        ->setIcon('EXT:altaah1package/Resources/Public/Icons/Custom-Icon-Design-Mono-Business-2-Coffee.ico')
+);
+
+\TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\B13\Container\Tca\Registry::class)->configureContainer(
+        (
+            new \B13\Container\Tca\ContainerConfiguration(
+                'b13-2cols7525-container', // CType
+                '75% 25%', // label
+                'bootstrap 75 25', // description
+                [
+                    [
+                        ['name' => 'left side', 'colPos' => 201],
+                        ['name' => 'right side', 'colPos' => 202]
+                    ]
+                ] // grid configuration
+            )
+        )
+        // set an optional icon configuration
+        ->setIcon('EXT:altaah1package/Resources/Public/Icons/Custom-Icon-Design-Mono-Business-2-Coffee.ico')
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

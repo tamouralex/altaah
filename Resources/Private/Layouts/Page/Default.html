@@ -95,7 +95,10 @@
                                     <f:if condition="{ankerItem.data.tx_altaah1package_inmainmenu} == 1">
                                         <li class="nav-item">
                                             <a href="<f:if condition='{mainItem.current} != 1'>{mainItem.link}</f:if>#c{ankerItem.data.uid}" class="nav-link scrollto">
-                                                {ankerItem.data.header}
+                                                <f:if condition='{ankerItem.data.tx_altaah1package_nav_title}'>
+                                                    <f:then><span>{ankerItem.data.tx_altaah1package_nav_title}</span></f:then>
+                                                    <f:else><span>{ankerItem.data.header}</span></f:else>
+                                                </f:if> 
                                             </a>
                                         </li>
                                     </f:if>
