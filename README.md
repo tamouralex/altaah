@@ -1,4 +1,4 @@
 Sitepackage for the project "altaah1package"
 ==============================================================
 
-Add some explanation here.
+Ein minimalistiches Package zu erstellen kleiner Webseiten insbesondere Onepager

@@ -1,6 +1,12 @@
+######################
+#### DEPENDENCIES ####
+######################
 @import 'EXT:fluid_styled_content/Configuration/TypoScript/constants.typoscript'
 @import 'EXT:backgroundimage4ce/Configuration/TypoScript/constants.typoscript'
 
+########################
+#### CONSTANTEDITOR ####
+########################
 # customcategory=altaah=Altaah
 		
 #cat=altaah/a; type=options[TextHeader,LogoImage]; label= Logo or Text: Chose if you want to have logo or a text
@@ -20,17 +26,6 @@ faviconpath = typo3conf/ext/altaah1package/Resources/Public/Icons/favicon.ico
 		
 #cat=altaah/m; type=string; label= apple-touch-icon: Path to your apple touch icon
 appletouchpath = typo3conf/ext/altaah1package/Resources/Public/Icons/apple-touch-icon.png	
-
-
-
-
-
-
-
-######################
-#### DEPENDENCIES ####
-######################
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:fluid_styled_content/Configuration/TypoScript/constants.typoscript">
 
 
 ##############################
@@ -83,6 +78,3 @@ config {
     headerComment = build by sitepackagebuilder.com
     sendCacheHeaders = 1
 }
-
-
-

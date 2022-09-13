@@ -1,5 +1,8 @@
-page {
+##############
+#### META ####
+##############
 
+page {
     meta {
         viewport = {$page.meta.viewport}
         robots = {$page.meta.robots}
@@ -65,4 +68,4 @@ page {
             }
         }
     }
-}    
+} 
