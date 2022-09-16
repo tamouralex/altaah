@@ -12,7 +12,8 @@ $EM_CONF[$_EXTKEY] = [
             'typo3' => '10.4.0-10.4.99',
             'fluid_styled_content' => '10.4.0-10.4.99',
             'rte_ckeditor' => '10.4.0-10.4.99',
-            'b13/container' => '10.4.0-10.4.99',
+            'b13/container' => '2.0.0-2.9.99',
+            'sbtheke/backgroundimage4ce' => '5.1.0-5.5.99',
         ],
         'conflicts' => [
         ],

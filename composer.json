@@ -9,7 +9,8 @@
         "typo3/cms-core": "^10.4",
         "typo3/cms-rte-ckeditor": "^10.4",
         "typo3/cms-fluid-styled-content": "^10.4",
-        "b13/container": "^10.4"
+        "b13/container": "^2.0",
+        "sbtheke/backgroundimage4ce": "^5.1"
     },
     "autoload": {
         "psr-4": {
