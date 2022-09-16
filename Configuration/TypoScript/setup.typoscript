@@ -3,6 +3,7 @@
 ######################
 @import 'EXT:fluid_styled_content/Configuration/TypoScript/setup.typoscript'
 @import 'EXT:fluid_styled_content/Configuration/TypoScript/Styling/setup.typoscript'
+@import 'EXT:backgroundimage4ce/Configuration/TypoScript/setup.typoscript'
 
 ################
 #### HELPER ####
@@ -14,3 +15,8 @@
 ################
 @import 'EXT:altaah1package/Configuration/TypoScript/Lib/'
 
+
+#########################
+#### BACKGROUND4CE#######
+#########################
+lib.contentElement.layoutRootPaths.30 = EXT:altaah1package/Resources/Private/Layouts/ContentElements/

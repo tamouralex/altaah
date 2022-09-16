@@ -49,7 +49,22 @@ $temporaryColumn = array(
 
 
 
-
+\TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\B13\Container\Tca\Registry::class)->configureContainer(
+    (
+        new \B13\Container\Tca\ContainerConfiguration(
+            'b13-1col-container', // CType
+            'Container', // label
+            'bootstrap container', // description
+            [
+                [
+                    ['name' => 'center', 'colPos' => 201]
+                ]
+            ] // grid configuration
+        )
+    )
+    // set an optional icon configuration
+    ->setIcon('EXT:altaah1package/Resources/Public/Icons/Custom-Icon-Design-Mono-Business-2-Coffee.ico')
+);
 
 \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\B13\Container\Tca\Registry::class)->configureContainer(
     (

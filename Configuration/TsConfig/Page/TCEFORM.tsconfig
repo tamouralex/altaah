@@ -1,6 +1,6 @@
-#
-# TCEFORM
-#
+##########
+# TCEFORM#
+##########
 TCEFORM {
     pages {
 
@@ -23,5 +23,19 @@ TCEFORM {
             1 = centered
             2 = full width
         }
+        space_after_class.addItems {
+		        padding-extra-small = padding-extra-small
+		        padding-small = padding-small
+		        padding-medium = padding-medium
+		        padding-large = padding-large
+		        padding-extra-large = padding-extra-large
+		}
+        space_before_class.addItems {
+		        padding-extra-small = padding-extra-small
+		        padding-small = padding-small
+		        padding-medium = padding-medium
+		        padding-large = padding-large
+		        padding-extra-large = padding-extra-large
+		}
     }
 }

@@ -16,6 +16,17 @@ body {
   margin: 0;
   display: inline-block;
 }
+
+section {
+  padding-top: 0rem;
+  padding-bottom: 1rem;
+}
+
+header {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 @media (max-width: 768px) {
   .headerlogo {
     max-height:40px;
@@ -73,3 +84,15 @@ body {
 .navbar-dark .navbar-nav .show > .nav-linktypo3, .navbar-dark .navbar-nav .nav-linktypo3.typo3active {
   color: #fff;
 }
+
+.frame-space-before-padding-extra-small { padding-top: 1em; }
+.frame-space-before-padding-small { padding-top: 2em; }
+.frame-space-before-padding-medium { padding-top: 3em; }
+.frame-space-before-padding-large { padding-top: 4em; }
+.frame-space-before-padding-extra-large { padding-top: 5em; }
+
+.frame-space-after-padding-extra-small { padding-bottom: 1em; }
+.frame-space-after-padding-small { padding-bottom: 2em; }
+.frame-space-after-padding-medium { padding-bottom: 3em; }
+.frame-space-after-padding-large { padding-bottom: 4em; }
+.frame-space-after-padding-extra-large { padding-bottom: 5em; }

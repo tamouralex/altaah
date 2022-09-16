@@ -2,6 +2,20 @@
 #### CONTAINERELEMENTS ####
 ###########################
 
+tt_content.b13-1col-container < lib.contentElement
+tt_content.b13-1col-container {
+    templateName = 1Col
+    layoutRootPaths {
+        10 = EXT:altaah1package/Resources/Private/Layouts/ContentElements
+    }
+    templateRootPaths {
+        10 = EXT:altaah1package/Resources/Private/Templates/ContentElements
+    }
+    dataProcessing {
+        100 = B13\Container\DataProcessing\ContainerProcessor
+    }
+}
+
 tt_content.b13-2cols5050-container < lib.contentElement
 tt_content.b13-2cols5050-container {
     templateName = 2Cols5050
