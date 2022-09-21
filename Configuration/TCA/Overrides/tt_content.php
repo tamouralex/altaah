@@ -120,6 +120,7 @@ $temporaryColumn = array(
         ->setIcon('EXT:altaah1package/Resources/Public/Icons/Custom-Icon-Design-Mono-Business-2-Coffee.ico')
 );
 
+require $_SERVER["DOCUMENT_ROOT"].'/typo3conf/ext/backgroundimage4ce/Configuration/TCA/Overrides/tt_content.php';
 
 
 
