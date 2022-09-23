@@ -2,7 +2,6 @@
 defined('TYPO3_MODE') or die();
 
 
-
 $temporaryColumn = array(
         'tx_altaah1package_inmainmenu' => array (
                 'exclude' => 0,
@@ -47,8 +46,6 @@ $temporaryColumn = array(
 );
 
 
-
-
 \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\B13\Container\Tca\Registry::class)->configureContainer(
     (
         new \B13\Container\Tca\ContainerConfiguration(
@@ -65,6 +62,8 @@ $temporaryColumn = array(
     // set an optional icon configuration
     ->setIcon('EXT:altaah1package/Resources/Public/Icons/Custom-Icon-Design-Mono-Business-2-Coffee.ico')
 );
+
+
 
 \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\B13\Container\Tca\Registry::class)->configureContainer(
     (
@@ -120,7 +119,27 @@ $temporaryColumn = array(
         ->setIcon('EXT:altaah1package/Resources/Public/Icons/Custom-Icon-Design-Mono-Business-2-Coffee.ico')
 );
 
+\TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\B13\Container\Tca\Registry::class)->configureContainer(
+    (
+        new \B13\Container\Tca\ContainerConfiguration(
+            'b13-3cols333333-container', // CType
+            '33% 33% 33%', // label
+            'bootstrap 33 33 33', // description
+            [
+                [
+                    ['name' => 'left side', 'colPos' => 201],
+                    ['name' => 'middle side', 'colPos' => 203],
+                    ['name' => 'right side', 'colPos' => 202]
+                ]
+            ] // grid configuration
+        )
+    )
+    // set an optional icon configuration
+    ->setIcon('EXT:altaah1package/Resources/Public/Icons/Custom-Icon-Design-Mono-Business-2-Coffee.ico')
+);
+
 require $_SERVER["DOCUMENT_ROOT"].'/typo3conf/ext/backgroundimage4ce/Configuration/TCA/Overrides/tt_content.php';
+
 
 
 

@@ -2,9 +2,9 @@
 #### CONTAINERELEMENTS ####
 ###########################
 
-tt_content.b13-1col-container < lib.contentElement
-tt_content.b13-1col-container {
-    templateName = 1Col
+tt_content.b13-2cols5050-container < lib.contentElement
+tt_content.b13-2cols5050-container {
+    templateName = 2Cols5050
     layoutRootPaths {
         10 = EXT:altaah1package/Resources/Private/Layouts/ContentElements
     }
@@ -16,9 +16,9 @@ tt_content.b13-1col-container {
     }
 }
 
-tt_content.b13-2cols5050-container < lib.contentElement
-tt_content.b13-2cols5050-container {
-    templateName = 2Cols5050
+tt_content.b13-1col-container < lib.contentElement
+tt_content.b13-1col-container {
+    templateName = 1Col
     layoutRootPaths {
         10 = EXT:altaah1package/Resources/Private/Layouts/ContentElements
     }
@@ -47,6 +47,20 @@ tt_content.b13-2cols2575-container {
 tt_content.b13-2cols7525-container < lib.contentElement
 tt_content.b13-2cols7525-container {
     templateName = 2Cols7525
+    layoutRootPaths {
+        10 = EXT:altaah1package/Resources/Private/Layouts/ContentElements
+    }
+    templateRootPaths {
+        10 = EXT:altaah1package/Resources/Private/Templates/ContentElements
+    }
+    dataProcessing {
+        100 = B13\Container\DataProcessing\ContainerProcessor
+    }
+}
+
+tt_content.b13-3cols333333-container < lib.contentElement
+tt_content.b13-3cols333333-container {
+    templateName = 3Cols333333
     layoutRootPaths {
         10 = EXT:altaah1package/Resources/Private/Layouts/ContentElements
     }

@@ -1,3 +1,6 @@
-        <footer class="py-5 bg-dark">
-            <div class="container px-4"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2022</p></div>
-        </footer>
+
+<f:for each="{mainnavigation}" as="mainItem">
+    <f:if condition="{mainItem.title} == 'footer'">
+        <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{mainItem.data.uid}', colPos: '0'}" />        
+    </f:if>
+</f:for>
