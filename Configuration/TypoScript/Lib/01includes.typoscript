@@ -9,8 +9,10 @@ page {
     }
 
     includeCSS {
+        fonts = EXT:altaah1package/Resources/Public/Fonts/fonts.css
         styles = EXT:altaah1package/Resources/Public/Css/styles.css
         layout = EXT:altaah1package/Resources/Public/Css/layout.css
+        rte = EXT:altaah1package/Resources/Public/Css/rte.css
     }
 
     includeJSLibs {

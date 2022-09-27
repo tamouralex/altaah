@@ -5,11 +5,20 @@ imports:
 
 editor:
     config:
-        contentsCss: "EXT:altaah1package/Resources/Public/Css/rte.css"
+        contentsCss: ["EXT:altaah1package/Resources/Public/Fonts/fonts.css", "EXT:altaah1package/Resources/Public/Css/rte.css", "EXT:altaah1package/Resources/Public/Css/styles.css"]
+
+        font_names:  
+           'Bitter;Cantarell;Montserrat;Play;Roboto;Satisfy'
 
         stylesSet:
             - { name: "Lead", element: "p", attributes: { 'class': 'lead' } }
-
+            - { name: "button-blue", element: "a", attributes: { 'class': 'btn btn-primary btn-xl rounded-pill' }}
+            - { name: "button-white", element: "a", attributes: { 'class': 'btn btn-light btn-xl rounded-pill' }}    
+            - { name: "button-red", element: "a", attributes: { 'class': 'btn btn-danger btn-xl rounded-pill' }}
+            - { name: "button-green", element: "a", attributes: { 'class': 'btn btn-success btn-xl rounded-pill' }} 
+            - { name: "button-transprarent", element: "a", styles: { 'background-color': 'rgba(24, 100, 171, 0.1)' }, attributes: { 'class': 'border btn btn-transprarent btn-xl rounded-pill' }}
+            - { name: "button-dark", element: "a", attributes: { 'class': 'btn btn-dark btn-xl rounded-pill' }}
+        
         toolbarGroups:
             - { name: styles, groups: [ format, styles ] }
             - { name: basicstyles, groups: [ basicstyles ] }
@@ -21,6 +30,8 @@ editor:
             - { name: insert, groups: [ insert ] }
             - { name: tools, groups: [ table, specialchar ] }
             - { name: document, groups: [ mode ] }
+            - { name: paragraph,   groups: [ list, indent, blocks, align, bidi ] }
+            - { name: 'colors' }
 
         format_tags: "p;h1;h2;h3;h4;h5;pre"
 
@@ -32,6 +43,9 @@ editor:
 
         extraPlugins:
             - justify
+            - font
+            - bidi
+            - colorbutton
 
         removePlugins:
             - image
@@ -40,3 +54,4 @@ editor:
             - Anchor
             - Underline
             - Strike
+
