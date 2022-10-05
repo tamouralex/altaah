@@ -12,35 +12,32 @@ Installation
    {
 
 	"name": "typo3/cms-base-distribution",
-    "repositories": [
-
-       {
-          "type": "path",
-          "url": "./local_packages/*"
-       }
-
-    ],
+   
+         "repositories": [
+            {
+               "type": "path",
+               "url": "./local_packages/*"
+            } 
+          ],
 
 	"description" : "TYPO3 CMS Base Distr...- 
 	 
-4. altaah1package in local_packages speichern (altaah-* ordner entsprechend umbenennen)
+4. altaah1package in local_packages speichern (altaah-* ordner in altaah1package  umbenennen)
 5. Auch backgroundimage4ce muss in den local_packages Ordner	
    https://gitlab.com/SBTheke-TYPO3/backgroundimage4ce/-/tree/master/
-6. composer require b13/container   
-7. composer require sbtheke/backgroundimage4ce @dev
-8. composer require Altaah/altaah1package @dev 
-9. root page mit template erstellen mit Modul Sites Site Configuration erstellen
-10. Im Templatemodul dann nur das altaah1package einfügen
+   (backgroundimage4ce-* ordner in backgroundimage4ce umbenennen)
+6. composer require Altaah/altaah1package @dev 
+7.  Im Templatemodul dann nur das altaah1package einfügen
     Template-> info/modify-> edit the whole template record-> includes->Include static (from extensions
 
    Am Ende noch mal ins Maintainance Modul und alles updaten   
 
    Anwendung
    ============   
-1. im constanteditor alle erforderlichen   einstellungen vornehmen category ALTAAH
+1. Im Constanteditor alle erforderlichen Einstellungen vornehmen category ALTAAH
 
-2. wenn ihr nur einen onepager macht die inhaltselemente der seite werden falls man das im access tab einstellt in das menu übernommen
+2. Wenn ihr nur einen Onepager macht die Inhaltselemente der Seite werden falls man das im  access tab einstellt in das menu übernommen
 
-3. die footer seite muss auf der rootebene angelegt werden und als titel exact footer haben 
+3. Die footer Seite muss auf der rootebene angelegt werden und als Titel exact footer haben 
       vieleicht "Page enabled in menus" deactivieren
     
