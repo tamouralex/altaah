@@ -27,10 +27,12 @@ Installation
    https://gitlab.com/SBTheke-TYPO3/backgroundimage4ce/-/tree/master/
    (backgroundimage4ce-* ordner in backgroundimage4ce umbenennen)
 6. composer require Altaah/altaah1package @dev 
-7.  Im Templatemodul dann nur das altaah1package einfügen
-    Template-> info/modify-> edit the whole template record-> includes->Include static (from extensions
+7. Am Ende noch mal ins Maintainance Modul und alles updaten
+8. root Seite mit Template anlegen
+9. Im Templatemodul dann nur das altaah1package einfügen
+   Template-> info/modify-> edit the whole template record-> includes->Include static (from extensions
 
-   Am Ende noch mal ins Maintainance Modul und alles updaten   
+      
 
    Anwendung
    ============   
