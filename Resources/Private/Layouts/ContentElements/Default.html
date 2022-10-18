@@ -4,7 +4,7 @@
 
     <f:if condition="{data.frame_class} != none || data.tx_backgroundimage4ce_active">
         <f:then>
-
+        {f:if(condition: '{data.tx_altaah1package_nav_url}', then: '<section id="{data.tx_altaah1package_nav_url}">')} 
             <section id="c{data.uid}" class="frame frame-{data.frame_class} frame-type-{data.CType} <f:if condition='{data.layout} == 2'>container-fluid</f:if> <f:if condition='{data.layout} == 1'>container</f:if> {f:if(condition: data.space_before_class, then: ' frame-space-before-{data.space_before_class}')}{f:if(condition: data.space_after_class, then: ' frame-space-after-{data.space_after_class}')} {f:if(condition: data.tx_backgroundimage4ce_active, then: ' {bg4ce:renderBackground(cObj: data)}')}">
                 <f:if condition="{data._LOCALIZED_UID}">
                     <a id="c{data._LOCALIZED_UID}"></a>
@@ -23,7 +23,7 @@
                     <f:render partial="DropIn/After/All" arguments="{_all}" />
                 </f:render>
             </section>
-
+         {f:if(condition: '{data.tx_altaah1package_nav_url}', then: '</section>')}
         </f:then>
         <f:else>
 

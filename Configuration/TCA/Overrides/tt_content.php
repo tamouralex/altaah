@@ -26,7 +26,15 @@ $temporaryColumn = array(
                     'type' => 'input',
                     'max' => 255                        
                 )
-        )
+        ),
+        'tx_altaah1package_nav_url' => array (
+            'exclude' => 0,
+            'label' => 'url segment ',
+            'config' => array (
+                'type' => 'input',
+                'max' => 255                        
+            )
+    )       
 );
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns(
         'tt_content',
@@ -43,6 +51,12 @@ $temporaryColumn = array(
         'headers',
         'tx_altaah1package_nav_title',
         'after:subheader'
+);
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addFieldsToPalette(
+    'tt_content',
+    'headers',
+    'tx_altaah1package_nav_url',
+    'after:tx_altaah1package_nav_title'
 );
 
 
@@ -139,23 +153,4 @@ $temporaryColumn = array(
 );
 
 require $_SERVER["DOCUMENT_ROOT"].'/typo3conf/ext/backgroundimage4ce/Configuration/TCA/Overrides/tt_content.php';
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

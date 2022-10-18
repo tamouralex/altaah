@@ -4,6 +4,7 @@
 @import 'EXT:fluid_styled_content/Configuration/TypoScript/setup.typoscript'
 @import 'EXT:fluid_styled_content/Configuration/TypoScript/Styling/setup.typoscript'
 @import 'EXT:backgroundimage4ce/Configuration/TypoScript/setup.typoscript'
+@import 'EXT:form/Configuration/TypoScript/setup.typoscript'
 
 ################
 #### HELPER ####
@@ -20,3 +21,23 @@
 #### BACKGROUND4CE#######
 #########################
 lib.contentElement.layoutRootPaths.30 = EXT:altaah1package/Resources/Private/Layouts/ContentElements/
+
+
+#########################
+#### FORMEXTENSION#######
+#########################
+plugin.tx_form {
+  settings {
+    yamlConfigurations {
+      100 = EXT:altaah1package/Configuration/Form/CustomFormSetup.yaml
+    }
+  }
+}
+
+module.tx_form {
+  settings {
+    yamlConfigurations {
+      100 = EXT:altaah1package/Configuration/Form/CustomFormSetup.yaml
+    }
+  }
+}  

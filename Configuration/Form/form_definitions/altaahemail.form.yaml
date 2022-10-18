@@ -1,0 +1,139 @@
+
+renderingOptions:
+  submitButtonLabel: Absenden
+type: Form
+identifier: altaahemail
+label: altaahemail
+prototypeName: email
+finishers:
+  -
+    options:
+      subject: '{text-2}  {text-1}'
+      recipients:
+        tamour@web.de: ''
+      senderAddress: '{email-1}'
+      senderName: 'Anfrage von Homepage'
+      addHtmlPart: true
+      attachUploads: true
+      translation:
+        language: Default
+      useFluidEmail: false
+      title: ''
+      replyToRecipients:
+        '': ''
+    identifier: EmailToReceiver
+  -
+    options:
+      subject: 'Danke für Ihre Nachricht'
+      recipients:
+        tamour@web.de: ''
+      senderAddress: '{email-1}'
+      senderName: 'Von homepage'
+      addHtmlPart: true
+      attachUploads: true
+      useFluidEmail: false
+      title: ''
+    identifier: EmailToSender
+  -
+    options:
+      message: 'Vielen Dank für Ihre Nachricht'
+      contentElementUid: ''
+    identifier: Confirmation
+renderables:
+  -
+    renderingOptions:
+      previousButtonLabel: 'Previous step'
+      nextButtonLabel: 'Next step'
+    type: Page
+    identifier: page-1
+    label: null
+    renderables:
+      -
+        defaultValue: ''
+        type: Text
+        identifier: text-1
+        label: Name
+        properties:
+          elementClassAttribute: altaahemailmaxwidth
+          fluidAdditionalAttributes:
+            required: required
+          validationErrorMessages:
+            -
+              code: 1221560910
+              message: 'Bitte geben Sie Ihren Vornamen ein'
+            -
+              code: 1221560718
+              message: 'Bitte geben Sie Ihren Vornamen ein'
+            -
+              code: 1347992400
+              message: 'Bitte geben Sie Ihren Vornamen ein'
+            -
+              code: 1347992453
+              message: 'Bitte geben Sie Ihren Vornamen ein'
+        validators:
+          -
+            identifier: NotEmpty
+      -
+        defaultValue: ''
+        type: Text
+        identifier: text-2
+        label: Nachname
+        properties:
+          elementClassAttribute: altaahemailmaxwidth
+          elementDescription: ''
+          fluidAdditionalAttributes:
+            required: required
+          validationErrorMessages:
+            -
+              code: 1221560910
+              message: 'Bitte geben Sie Ihren Nachnamen ein'
+            -
+              code: 1221560718
+              message: 'Bitte geben Sie Ihren Nachnamen ein'
+            -
+              code: 1347992400
+              message: 'Bitte geben Sie Ihren Nachnamen ein'
+            -
+              code: 1347992453
+              message: 'Bitte geben Sie Ihren Nachnamen ein'
+        validators:
+          -
+            identifier: NotEmpty
+      -
+        defaultValue: ''
+        type: Email
+        identifier: email-1
+        label: Email
+        properties:
+          elementClassAttribute: altaahemailmaxwidth
+          elementDescription: ''
+          fluidAdditionalAttributes:
+            required: required
+          validationErrorMessages:
+            -
+              code: 1221560910
+              message: 'Bitte email Adresse eingeben'
+            -
+              code: 1221560718
+              message: 'Bitte email Adresse eingeben'
+            -
+              code: 1347992400
+              message: 'Bitte email Adresse eingeben'
+            -
+              code: 1347992453
+              message: 'Bitte email Adresse eingeben'
+            -
+              code: 1221559976
+              message: 'keine valide email'
+        validators:
+          -
+            identifier: EmailAddress
+          -
+            identifier: NotEmpty
+      -
+        defaultValue: ''
+        type: Textarea
+        identifier: textarea-1
+        label: Nachricht
+        properties:
+          elementDescription: ''
