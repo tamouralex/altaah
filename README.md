@@ -38,7 +38,7 @@ Installation
    ============   
 1. Im Constanteditor alle erforderlichen Einstellungen vornehmen category ALTAAH
 
-2. Wenn ihr nur einen Onepager macht die Inhaltselemente der Seite werden falls man das im  access tab einstellt in das menu übernommen
+2. Wenn ihr nur einen Onepager macht die Inhaltselemente der Seite werden falls man das im  access tab einstellt in das menu übernommen fuktioniert allerdings nur auf der ersten Ebene wie gesagt ist dies ein Package in erster linie für Onepager.
 
 3. Die footer Seite muss auf der rootebene angelegt werden und als Titel exact footer haben 
       vieleicht "Page enabled in menus" deactivieren
