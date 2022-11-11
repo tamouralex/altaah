@@ -27,16 +27,18 @@ Installation
    https://gitlab.com/SBTheke-TYPO3/backgroundimage4ce/-/tree/master/
    (backgroundimage4ce-* ordner in backgroundimage4ce umbenennen)
 6. composer require Altaah/altaah1package @dev 
-7.  Im Templatemodul dann nur das altaah1package einfügen
-    Template-> info/modify-> edit the whole template record-> includes->Include static (from extensions
+7. Am Ende noch mal ins Maintainance Modul und alles updaten
+8. root Seite mit Template anlegen
+9. Im Templatemodul dann nur das altaah1package einfügen
+   Template-> info/modify-> edit the whole template record-> includes->Include static (from extensions
 
-   Am Ende noch mal ins Maintainance Modul und alles updaten   
+      
 
    Anwendung
    ============   
 1. Im Constanteditor alle erforderlichen Einstellungen vornehmen category ALTAAH
 
-2. Wenn ihr nur einen Onepager macht die Inhaltselemente der Seite werden falls man das im  access tab einstellt in das menu übernommen
+2. Wenn ihr nur einen Onepager macht die Inhaltselemente der Seite werden falls man das im  access tab einstellt in das menu übernommen fuktioniert allerdings nur auf der ersten Ebene wie gesagt ist dies ein Package in erster linie für Onepager.
 
 3. Die footer Seite muss auf der rootebene angelegt werden und als Titel exact footer haben 
       vieleicht "Page enabled in menus" deactivieren
