@@ -29,7 +29,7 @@ lib.contentElement.layoutRootPaths.30 = EXT:altaah1package/Resources/Private/Lay
 plugin.tx_form {
   settings {
     yamlConfigurations {
-      100 = EXT:altaah1package/Configuration/Form/CustomFormSetup.yaml
+      99 = EXT:altaah1package/Configuration/Form/CustomFormSetup.yaml
     }
   }
 }
@@ -37,7 +37,14 @@ plugin.tx_form {
 module.tx_form {
   settings {
     yamlConfigurations {
-      100 = EXT:altaah1package/Configuration/Form/CustomFormSetup.yaml
+      99 = EXT:altaah1package/Configuration/Form/CustomFormSetup.yaml
     }
   }
 }  
+
+###################
+####LIGHTBOX#######
+###################
+lib.contentElement.settings.media.popup {
+linkParams.ATagParams.dataWrap = class="lightbox{file:current:uid_foreign}" rel="lightbox[{file:current:uid_foreign}]"
+}

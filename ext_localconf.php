@@ -3,7 +3,7 @@ defined('TYPO3_MODE') || die();
 /***************
  * Add default RTE configuration
  */
-$GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['altaah1package'] = 'EXT:altaah1package/Configuration/RTE/Default.yaml';
+$GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['altaah'] = 'EXT:altaah1package/Configuration/RTE/Altaah.yaml';
 
 /***************
  * PageTS

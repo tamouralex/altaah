@@ -2,10 +2,34 @@ imports:
     - { resource: "EXT:rte_ckeditor/Configuration/RTE/Processing.yaml" }
     - { resource: "EXT:rte_ckeditor/Configuration/RTE/Editor/Base.yaml" }
     - { resource: "EXT:rte_ckeditor/Configuration/RTE/Editor/Plugins.yaml" }
+    - { resource: "EXT:altaah1package/Configuration/RTE/PluginFA5.yaml" }
 
 editor:
+
+    externalPlugins:
+        codesnippet:
+            resource: "EXT:altaah1package/Resources/Public/CKeditor/Plugins/codesnippet/"
+        
+        confzusatz:
+            resource: "EXT:altaah1package/Resources/Public/CKeditor/Plugins/confzusatz/"  
+            
+                    
     config:
-        contentsCss: ["EXT:altaah1package/Resources/Public/Fonts/fonts.css", "EXT:altaah1package/Resources/Public/Css/rte.css", "EXT:altaah1package/Resources/Public/Css/styles.css"]
+        
+        allowTags:   
+            - div
+
+        extraAllowedContent:
+            - i(*)[*] 
+                      
+        coreStyles_italic:
+          element: 'i'
+    
+        contentsCss: ["EXT:altaah1package/Resources/Public/Fonts/fonts.css", "EXT:altaah1package/Resources/Public/Css/rte.css", "EXT:altaah1package/Resources/Public/Css/styles.css", "EXT:altaah1package/Resources/Public/Shariff/shariff.min.css"]
+
+        fontSize_sizes:
+           '6/6px;7/7px;8/8px;9/9px;10/10px;11/11px;12/12px;13/13px;14/14px;15/15px;16/16px;17/17px;18/18px;19/19px;20/20px;21/21px;22/22px;23/23px;24/24px;25/25px;26/26px;27/27px;36/36px;44/44px;55/55px;66/66px;77/77px;88/88px;99/99px;2h/200px'   
+
 
         font_names:  
            'Bitter;Cantarell;Montserrat;Play;Roboto;Satisfy'
@@ -18,7 +42,8 @@ editor:
             - { name: "button-green", element: "a", attributes: { 'class': 'btn btn-success btn-xl rounded-pill' }} 
             - { name: "button-transprarent", element: "a", styles: { 'background-color': 'rgba(24, 100, 171, 0.1)' }, attributes: { 'class': 'border btn btn-transprarent btn-xl rounded-pill' }}
             - { name: "button-dark", element: "a", attributes: { 'class': 'btn btn-dark btn-xl rounded-pill' }}
-        
+
+       
         toolbarGroups:
             - { name: styles, groups: [ format, styles ] }
             - { name: basicstyles, groups: [ basicstyles ] }
@@ -46,12 +71,13 @@ editor:
             - font
             - bidi
             - colorbutton
+            - autolink
+            - smiley
+
 
         removePlugins:
-            - image
 
         removeButtons:
-            - Anchor
-            - Underline
-            - Strike
+
+
 

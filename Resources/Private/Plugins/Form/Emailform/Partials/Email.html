@@ -1,0 +1,29 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:formvh="http://typo3.org/ns/TYPO3/CMS/Form/ViewHelpers" data-namespace-typo3-fluid="true">
+<formvh:renderRenderable renderable="{element}">
+    <f:render partial="Field/Field" arguments="{element: element}" contentAs="elementContent">
+        <f:form.textfield
+                type="email"
+                property="{element.identifier}"
+                id="{element.uniqueIdentifier}"
+                class="{element.properties.elementClassAttribute} form-control"
+                errorClass="{element.properties.elementErrorClassAttribute}"
+                additionalAttributes="{formvh:translateElementProperty(element: element, property: 'fluidAdditionalAttributes')}"
+        />
+    </f:render>
+</formvh:renderRenderable>
+<f:asset.script identifier="{element.uniqueIdentifier}">
+    document.addEventListener("DOMContentLoaded", function() {
+        var element = document.getElementById("{element.uniqueIdentifier}");
+        var msg = "{element.properties.validationErrorMessages.0.message}";
+        element.oninvalid = function(e) {
+        e.target.setCustomValidity('');
+            if (!e.target.validity.valid) {
+                e.target.setCustomValidity(msg);
+            }
+        };
+        element.oninput = function(e) {
+            e.target.setCustomValidity('');
+        };
+    });
+</f:asset.script>
+</html>

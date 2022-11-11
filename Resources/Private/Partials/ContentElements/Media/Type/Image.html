@@ -23,6 +23,26 @@
         <figcaption class="image-caption">
             {file.description -> f:format.nl2br()}
         </figcaption>
-    </f:if>
+    </f:if>   
 </figure>
+<f:asset.script identifier="{data.uid}">
+$(document).ready(function() {
+    $('.lightbox{data.uid}').magnificPopup({
+      type:'image',
+      tClose: 'Schließen (Esc)',
+      tLoading: 'Bilder werden geladen ...',
+      gallery: {
+        enabled: true,
+        tCounter: '<span class="mfp-counter">%curr% von %total%</span>',
+        tPrev: 'Vorheriges',
+        tNext: 'Nächstes',
+      },
+      image: {
+           titleSrc: function(item) {
+              return item.el.find('img').attr('title');
+           }
+       }
+    });
+});
+</f:asset.script>
 </html>

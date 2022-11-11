@@ -38,6 +38,10 @@ styles {
         templateRootPath = EXT:altaah1package/Resources/Private/Templates/ContentElements/
     }
 }
+styles.content.textmedia.linkWrap.lightboxEnabled = 1
+#############
+#### RTE ####
+#############
 
 
 ############
