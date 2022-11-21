@@ -19,11 +19,7 @@
             </f:if>
         </f:else>
     </f:if>
-    <f:if condition="{file.description}">
-        <figcaption class="image-caption">
-            {file.description -> f:format.nl2br()}
-        </figcaption>
-    </f:if>   
+   
 </figure>
 <f:asset.script identifier="{data.uid}">
 $(document).ready(function() {
@@ -39,7 +35,7 @@ $(document).ready(function() {
       },
       image: {
            titleSrc: function(item) {
-              return item.el.find('img').attr('title');
+              return item.el.find('img').attr('caption');
            }
        }
     });

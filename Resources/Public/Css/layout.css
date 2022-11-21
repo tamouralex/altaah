@@ -120,3 +120,59 @@ header {
 .frame-space-after-padding-medium { padding-bottom: 3em; }
 .frame-space-after-padding-large { padding-bottom: 4em; }
 .frame-space-after-padding-extra-large { padding-bottom: 5em; }
+
+
+.altaahcont {
+  position: relative;
+}
+
+.altaahimage {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.altaahoverlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.altaahcont:hover .altaahoverlay {
+  opacity: 0.9;
+}
+
+.altaahtext {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
