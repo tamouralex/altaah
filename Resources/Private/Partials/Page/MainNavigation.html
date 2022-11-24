@@ -41,14 +41,14 @@
                                         <i class="bi bi-chevron-down"></i>
                                     </a>
                                     <ul class="dropdown-menu">
-                                        <li>
+                                        <li data-toggle="collapse" data-bs-toggle="collapse" data-bs-target="#navbarResponsive">
                                             <a href="{mainItem.link}#top" class="dropdown-item <f:if condition='{mainItem.current}'>typo3active</f:if>">
                                                 {mainItem.title}
                                             </a>
                                         </li>
                                         <f:for each="{mainItem.records}" as="ankerItem">
                                             <f:if condition="{ankerItem.data.tx_altaah1package_indropmenu} == 1">
-                                                <li>
+                                                <li data-toggle="collapse" data-bs-toggle="collapse" data-bs-target="#navbarResponsive">
                                                     <a href="{mainItem.link}{f:if(condition: '{ankerItem.data.tx_altaah1package_nav_url}', then: '#{ankerItem.data.tx_altaah1package_nav_url}', else: '#c{ankerItem.data.uid}')}" class="dropdown-item scrollto">
                                                         <f:if condition='{ankerItem.data.tx_altaah1package_nav_title}'>
                                                             <f:then><span>{ankerItem.data.tx_altaah1package_nav_title}</span></f:then>
