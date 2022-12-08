@@ -60,6 +60,9 @@ header {
     border-width: 5px;
 }
 
+.dropdown-item {
+  padding: 0.1rem 0.1rem;
+  }
 
 .dropdown-item.typo3active {
     color: #fff;
