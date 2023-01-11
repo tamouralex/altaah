@@ -24,7 +24,7 @@ Installation
 	 
 4. altaah1package in local_packages speichern (altaah-* ordner in altaah1package  umbenennen)
 5. composer require altaah/altaah1package @dev 
-6. Am Ende noch mal ins Maintainance Modul und alles updaten
+6. Am Ende noch mal ins Maintainance Modul und alles updaten:Analyze Database Structure
 7. root Seite mit Template anlegen
 8. Im Templatemodul dann nur das altaah1package einfügen
    Template-> info/modify-> edit the whole template record-> includes->Include static (from extensions
