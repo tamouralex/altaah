@@ -5,7 +5,7 @@ Ein minimalistiches Package zu erstellen kleiner Webseiten insbesondere Onepager
 
 Installation
 ===================
-1. Leere Installation von Typo3 mit Composer anlegen ^10.4 oder 
+1. Leere Installation von Typo3 mit Composer anlegen ^10.4 oder ^11.5
 2. Ordner local_packages im root anlegen
 3. Composer.json der Installation das Repositorie hinzufügen
 
