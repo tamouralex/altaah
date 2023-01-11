@@ -5,7 +5,7 @@ Ein minimalistiches Package zu erstellen kleiner Webseiten insbesondere Onepager
 
 Installation
 ===================
-1. Leere Installation von Typo3 mit Composer anlegen
+1. Leere Installation von Typo3 mit Composer anlegen ^10.4 oder 
 2. Ordner local_packages im root anlegen
 3. Composer.json der Installation das Repositorie hinzufügen
 
@@ -23,13 +23,10 @@ Installation
 	"description" : "TYPO3 CMS Base Distr...- 
 	 
 4. altaah1package in local_packages speichern (altaah-* ordner in altaah1package  umbenennen)
-5. Auch backgroundimage4ce muss in den local_packages Ordner	
-   https://gitlab.com/SBTheke-TYPO3/backgroundimage4ce/-/tree/master/
-   (backgroundimage4ce-* ordner in backgroundimage4ce umbenennen)
-6. composer require Altaah/altaah1package @dev 
-7. Am Ende noch mal ins Maintainance Modul und alles updaten
-8. root Seite mit Template anlegen
-9. Im Templatemodul dann nur das altaah1package einfügen
+5. composer require altaah/altaah1package @dev 
+6. Am Ende noch mal ins Maintainance Modul und alles updaten
+7. root Seite mit Template anlegen
+8. Im Templatemodul dann nur das altaah1package einfügen
    Template-> info/modify-> edit the whole template record-> includes->Include static (from extensions
 
       
